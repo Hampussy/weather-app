@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Sen", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +18,91 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+p{
+  font-size: 1.6rem;
+}
+
+h1{
+  font-size: 4.5rem;
+}
+
+.App{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.App::before{
+  content: "";
+  background: url(./assets/vatten.jpg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container{
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.App .top {
+  width: 100%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.App .inputpos{
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  padding-top: 13px;
+}
+
+.App .stad{
+  height: 30px;
+  font-size: 20px;
+  width: auto;
+  border-radius: 10px;
+  position: relative;
+  font-family: "Sen", sans-serif;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.App .bottom{
+  margin-top: 73%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.App .bottom p{
+  font-size: 35px;
+}
+
+.App .feels{
+  margin-right: 15px;
+}
+
+.App .humidity{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.App .wind{
+  margin-left: 15px;
+}
+
+.App .location{
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+
